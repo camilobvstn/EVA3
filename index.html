@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVA3</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js"></script>
+</head>
+<body>
+    <form id="forms">
+        <button id="btnContraste" class="btn" onclick="cambiarContraste()">DarkMode</button>
+        <button id="btnFuente" class="btn" cambiartamanoFuente()>Ajustar Fuente</button>
+        <h1 id="titulo">Formulario</h1>
+        <p>Bienvenido. Todos los campos son obligatorios exepto aquellos que mencionen opcionalidad.</p>
+        <label for="nombre" class="labels">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ingrese nombre">
+        <p class="noDisplay" id="pnombre" >Ingresa un nombre.</p>
+        <label for="apellido" id="labels">Apellido:</label>
+        <input type="text" id="apellido" placeholder="Ingrese apellido"> 
+        <p class="noDisplay" id="papellido">Ingresa un apellido</p>
+        <label for="email" class="labels">Email:</label>
+        <input type="text" id="email" placeholder="ingrese email">
+        <p class="noDisplay" id="pemail">Ingrese un email</p>
+        <label for="telefono" class="labels">Telefono <span>(Opcional)</span>:</label>
+        <input type="tel" id="telefono" placeholder="ingrese telefono">
+        <p class="noDisplay" id="ptelefono">ingrese un numero valido</p>
+        <label for="usuario" class="labels">Nombre de usuario:</label>
+        <input type="text" id="usuario" placeholder="Nombre de usuario.">
+        <p class="noDisplay" id="pdusuario"></p>
+        <label for="pais" class="labels" id="pais2">Pais:</label>
+        <select name="pais" id="pais"></select>
+            <option value="Chile"></option>
+            <option value="Argentina"></option>
+        <label for="mensaje" class="labels">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+        <label for="terminos" class="labels" id="aceptar">Acpetar terminos y condiciones</label>
+        <input type="checkbox" id="terminos">
+        <button type="button" id="btnEnviar" onclick="validar()">Enviar</button>
+
+        
+    </form>
+    
+</body>
+</html>
