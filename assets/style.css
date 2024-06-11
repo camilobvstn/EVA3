@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(250, 0, 0, 0.151)
+    
+}
+
 form{
     box-shadow: 0 0 20px;
     border-radius: 20px;
@@ -5,7 +19,7 @@ form{
     width: 30%;
     padding: 25px 70px;
     margin-top: 30px;
-    height: 1070px;
+    height: 900px;
 }
 #titulo{
     text-align: center;
@@ -13,14 +27,16 @@ form{
 }
 
 input,label{
+    outline: none;
     display: block;
     width: 100%;
     
 }
 
 input{
+    border: 1px solid black;
     border-radius: 20px;
-    padding: 7px;
+    padding: 7px 20px;
     margin-bottom: 40px;
 }
 
@@ -42,7 +58,7 @@ select{
 #btnEnviar{
     padding: 10px 30px;
     margin-bottom: 70px;
-    margin-left: 230px;
+    margin-left: 165px;
     border: 0px;
     background-color: rgb(214, 214, 214);
     color: black;
@@ -64,6 +80,7 @@ select{
 
 .noDisplay{
     display: none;
+
 }
 p{
     text-align: center;

@@ -9,29 +9,35 @@
 </head>
 <body>
     <form id="forms">
-        <button id="btnContraste" class="btn" onclick="cambiarContraste()">DarkMode</button>
-        <button id="btnFuente" class="btn" cambiartamanoFuente()>Ajustar Fuente</button>
-        <h1 id="titulo">Formulario</h1>
-        <p>Bienvenido. Todos los campos son obligatorios exepto aquellos que mencionen opcionalidad.</p>
-        <label for="nombre" class="labels">Nombre:</label>
-        <input type="text" id="nombre" placeholder="Ingrese nombre">
-        <p class="noDisplay" id="pnombre" >Ingresa un nombre.</p>
-        <label for="apellido" id="labels">Apellido:</label>
-        <input type="text" id="apellido" placeholder="Ingrese apellido"> 
-        <p class="noDisplay" id="papellido">Ingresa un apellido</p>
-        <label for="email" class="labels">Email:</label>
-        <input type="text" id="email" placeholder="ingrese email">
-        <p class="noDisplay" id="pemail">Ingrese un email</p>
-        <label for="telefono" class="labels">Telefono <span>(Opcional)</span>:</label>
-        <input type="tel" id="telefono" placeholder="ingrese telefono">
-        <p class="noDisplay" id="ptelefono">ingrese un numero valido</p>
-        <label for="usuario" class="labels">Nombre de usuario:</label>
-        <input type="text" id="usuario" placeholder="Nombre de usuario.">
-        <p class="noDisplay" id="pdusuario"></p>
+        <div id="principales">
+            <button id="btnContraste" class="btn" onclick="cambiarContraste()">DarkMode</button>
+            <button id="btnFuente" class="btn" cambiartamanoFuente()>Ajustar Fuente</button>
+            <h1 id="titulo">Formulario</h1>
+            <p>Bienvenido. Todos los campos son obligatorios exepto aquellos que mencionen opcionalidad.</p>
+            <label for="nombre" class="labels">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingrese nombre">
+            <p class="noDisplay" id="pnombre" >Ingresa un nombre.</p>
+            <label for="apellido" id="labels">Apellido:</label>
+            <input type="text" id="apellido" placeholder="Ingrese apellido"> 
+            <p class="noDisplay" id="papellido">Ingresa un apellido</p>
+            <label for="email" class="labels">Email:</label>
+            <input type="text" id="email" placeholder="ingrese email">
+            <p class="noDisplay" id="pemail">Ingrese un email</p>
+        </div>
+        <div id="secundarios">
+            <label for="telefono" class="labels">Telefono:</label>
+            <input type="tel" id="telefono" placeholder="ingrese telefono">
+            <p class="noDisplay" id="ptelefono">ingrese un numero valido</p>
+            <label for="usuario" class="labels">Nombre de usuario:</label>
+            <input type="text" id="usuario" placeholder="Nombre de usuario.">
+            <p class="noDisplay" id="pusuario">Ingreese un nombre de usuario.</p>
+        </div>
         <label for="pais" class="labels" id="pais2">Pais:</label>
-        <select name="pais" id="pais"></select>
-            <option value="Chile"></option>
-            <option value="Argentina"></option>
+        <select name="pais" id="pais">
+            <option>Selecciona un pais</option>
+            <option>Chile</option>
+            <option>Argentina</option>
+        </select>
         <label for="mensaje" class="labels">Mensaje:</label>
         <textarea name="mensaje" id="mensaje"></textarea>
         <label for="terminos" class="labels" id="aceptar">Acpetar terminos y condiciones</label>
