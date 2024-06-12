@@ -3,49 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVA3</title>
+    <title>Document</title>
     <link rel="stylesheet" href="assets/style.css">
     <script src="assets/script.js"></script>
 </head>
 <body>
-    <form id="forms">
-        <div id="principales">
-            <button id="btnContraste" onclick="cambiarContraste()">DarkMode</button>
-            <button id="btnFuente" class="btn" cambiartamanoFuente()>Ajustar Fuente</button>
-            <h1 id="titulo">Formulario</h1>
-            <p>Bienvenido. Todos los campos son obligatorios exepto aquellos que mencionen opcionalidad.</p>
-            <label for="nombre" class="labels">Nombre:</label>
-            <input type="text" id="nombre" placeholder="Ingrese nombre">
-            <p class="noDisplay" id="pnombre" >Ingresa un nombre.</p>
-            <label for="apellido" class="labels">Apellido:</label>
-            <input type="text" id="apellido" placeholder="Ingrese apellido"> 
-            <p class="noDisplay" id="papellido">Ingresa un apellido</p>
-            <label for="email" class="labels">Email:</label>
-            <input type="text" id="email" placeholder="ingrese email">
-            <p class="noDisplay" id="pemail">Ingrese un email</p>
-        </div>
-        <div id="secundarios">
-            <label for="telefono" class="labels">Telefono:</label>
-            <input type="tel" id="telefono" placeholder="ingrese telefono">
-            <p class="noDisplay" id="ptelefono">ingrese un numero valido</p>
-            <label for="usuario" class="labels">Nombre de usuario:</label>
-            <input type="text" id="usuario" placeholder="Nombre de usuario.">
-            <p class="noDisplay" id="pusuario">Ingreese un nombre de usuario.</p>
-        </div>
-        <label for="pais" class="labels" id="pais2">Pais:</label>
-        <select name="pais" id="pais">
-            <option>Selecciona un pais</option>
-            <option>Chile</option>
-            <option>Argentina</option>
-        </select>
-        <label for="mensaje" class="labels">Mensaje:</label>
-        <textarea name="mensaje" id="mensaje"></textarea>
-        <label for="terminos" class="labels" id="aceptar">Acpetar terminos y condiciones</label>
-        <input type="checkbox" id="terminos">
+    <form id="form">
+        <button id="btnContraste" onclick="cambiarContraste()">Contraste</button>
+        <button id="btnFuente" onclick="cambiarFuenteTamano()">Fuente</button>
+        <h1 id="titulo">REGISTRO</h1>
+        <label class="labels">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ingrese su nombre">
+        <p class="noDisplay" id="pnombre">Debes ingresar un nombre valido.</p>
+        <label class="labels">Apellido:</label>
+        <input type="text" id="apellido" placeholder="Ingrese su apellido">
+        <p class="noDisplay" id="papellido">Debes ingresar un apellido valido.</p>
+        <label class="labels">Email:</label>
+        <input type="email" id="email" placeholder="Ingrese un email">
+        <p class="noDisplay" id="pemail">Debes ingresar un email valido.</p>
+        <label class="labels">Telefono:</label>
+        <input type="tel" id="telefono" placeholder="Ingrese su telefono">
+        <p class="noDisplay" id="ptelefono">Debes ingresar un numero valido(debe tener 9 digitos.).</p>
+        <label class="labels">Direccion:</label>
+        <input type="text" id="direccion" placeholder="Ingrese su direccion">
+        <p class="noDisplay" id="pdireccion">Debes ingresar una direccion.</p>
+        <label class="labels">Nombre de usuario:</label>
+        <input type="text" id="usuario" placeholder="Ingresa un nombre de usuario">
+        <p class="noDisplay" id="pusuario">Ingresa un nombre de usuario.</p>
+        <label class="labels">Aceptar Terminos y Condiciones.</label>
+        <input type="checkbox" id="terminos" required>
+        <p class="noDisplay" id="pterminos">Debes aceptar los terminos y condiciones para continuar</p>
         <button type="button" id="btnEnviar" onclick="validar()">Enviar</button>
-
-        
     </form>
-    
 </body>
 </html>

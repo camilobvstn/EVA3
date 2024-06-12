@@ -1,48 +1,31 @@
-function cambiarContraste(){
-    let eBody = document.body;
-    let fondo = eBody.style.backgroundColor;
-    let eform = document.getElementById("forms");
-    let elabels=document.getElementsByClassName("labels");
-    if (fondo== "white"){
-        eform.style.backgroundColor = "white";
-        for (let index = 0; index < elabels.length; index++) {
-            const element = elabels[index];
-            element.style.color = "red";}
-        }
-     else {
-        eform.style.backgroundColor = "grey";
-    }
-}
-
 function validar(){
     validarVacio("nombre");
     validarVacio("apellido")
     validarVacio("email");
+    validarLongitud,validarLongitud("telefono");
+    validarVacio("direccion");
     validarVacio("usuario");
-    validarLongitud("telefono");
 }
 function validarVacio(idCampo){
-
     let elemento = document.getElementById(idCampo);
+    let eform = document.getElementById("form");
     console.log(elemento);
-
     let valor = elemento.value;
     console.log(valor);
-
-    let error = document.getElementById("p"+idCampo);
+    let eParrafo = document.getElementById("p"+idCampo);
     if(valor.trim()==""){
+        eform.style.height="900px"
+        elemento.style.border = "1px solid"
         elemento.style.borderColor = "red";
-        elemento.style.marginBottom="0px"
-        elemento.style.boxShadow="0 0 10px red"
-        error.style.display = "block";
-        error.style.color="red";
+        eParrafo.style.display = "block";
+        eParrafo.style.color="red";
+
     }else{
-        elemento.style.boxShadow="0 0 10px green"
+        console.log("algo Hay")
         elemento.style.borderColor = "green";
-        error.style.display = "none";
+        eParrafo.style.display = "none";
     }
 }
-
 function validarLongitud(idCampo){
     let elemento = document.getElementById(idCampo);
     console.log(elemento);
@@ -50,72 +33,70 @@ function validarLongitud(idCampo){
     console.log(valor);
     console.log(isNaN(valor))
     let eParrafo = document.getElementById("p"+idCampo);
-    if(isNaN(valor)){
-        error.innerText = "Debes ingresar un numero";
-        error.style.display = "block";
-        eParrafo.style.color="red"
-        elemento.style.boxShadow="0 0 10px red"
-        elemento.style.backgroundColor="rgba(250, 0, 0, 0.051"
-        elemento.style.display = "none";
+    if(isNaN(valor)){//true si es un caracter
+        eParrafo.innerText = "Debes ingresar un numero";
+        eParrafo.style.display = "block";
     }
     else{
         if(valor.trim().length == 9 || valor.trim().length == 0 ){
+            console.log("algo Hay")
             elemento.style.borderColor = "green";
+            eParrafo.style.display = "none";
         }else{
             
-            elemento.style.boxShadow="0 0 10px red"
+            console.log("No hay nada")
             elemento.style.borderColor = "red";
             eParrafo.style.display = "block";
-            eParrafo.style.color="red"
        
-        }}
+        }
     }
+}
+
+function cambiarContraste(){
+    let eBody = document.body;
+    let fondo = eBody.style.backgroundColor;
+    let eform = document.getElementById("form");
+    let elabels=document.getElementsByClassName("labels");
+    let etitulos=document.getElementsByClassName("titulo");
+    let eheader= document.getElementById("headers")
+
+    
+    if(fondo == "white"){
+        eBody.style.backgroundColor = "black";
+        for (let index = 0; index < elabels.length; index++) {
+            const element = elabels[index];
+            element.style.color = "white";
+        }
+        eform.style.backgroundColor="grey";
+
+        for (let index = 0; index < etitulos.length; index++) {
+            const element = etitulos[index];
+            element.style.color = "white";
+        }
+
+        eheader.style.backgroundColor="grey";
+    }else{
+        eBody.style.backgroundColor = "white";
+        for (let index = 0; index < elabels.length; index++) {
+            const element = elabels[index];
+            element.style.color = "black";
+        }
+        eform.style.backgroundColor="white";
+        for (let index = 0; index < etitulos.length; index++) {
+            const element = etitulos[index];
+            element.style.color = "black";
+        }
+        
+
+    }
+    
+}
+
+function cambiarFuenteTamano(){
+    var eH1 = document.getElementById("titulo")
+    eH1.classList.toggle("cambiofuente1")
+    var elabels=document.getElementsByClassName("labels")
+    elabels.classList.toggle("cambiofuente2")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

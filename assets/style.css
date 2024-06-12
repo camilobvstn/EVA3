@@ -2,97 +2,48 @@
 *{
     font-family: "Poppins", sans-serif;
 }
-
+.noDisplay{
+    display: none;
+    text-align: center;
+}
 body{
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    
 }
 
-form{
-    box-shadow: 0 0 20px;
-    border-radius: 20px;
-    width: 30%;
-    padding: 25px 70px;
-    margin-top: 30px;
-    height: 900px;
+#form{
+    box-shadow: 0 0 20px black;
+    padding: 20px;
     background-color: white;
-}
-#titulo{
-    text-align: center;
-    font-size: 50px;
+    width: 40%;
+    height: 700px;
+    max-height: 1200px;
 }
 
 input,label{
-    outline: none;
     display: block;
-    width: 100%;
-    
+    margin: auto;
 }
-
 input{
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 7px 20px;
-    margin-bottom: 40px;
-}
-
-input::placeholder{
-    color: rgb(184, 181, 181);
+    height: 40px;
+    width: 50%;
 }
 
 label{
-    font-size: 17px;
+    margin-left: 185px;
+    margin-top: 20px;
 }
 
-select{
-    display: inline;
+h1{
+    text-align: center;
 }
 
-#pais{
-    display: inline;
+.cambiofuente1{
+    color: aqua;
 }
-#btnEnviar{
-    padding: 10px 30px;
-    margin-bottom: 70px;
-    margin-left: 165px;
-    border: 0px;
-    background-color: rgb(214, 214, 214);
-    color: black;
-}
-#btnEnviar:hover{
-    background-color: rgb(67, 163, 67);
-    box-shadow: 0 0 20px rgb(67, 163, 67);
-    color: white;
-}
-
-
 
 #terminos{
-    display: inline;
-}
-#aceptar{
-    text-align: center;
-}
-
-.noDisplay{
-    display: none;
-
-}
-p{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#btnContraste{
-    margin-right: 360px;
-
-}
-
-#mensaje{
-    width: 100%;
-
+    height: 20px;
 }
