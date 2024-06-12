@@ -8,18 +8,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(250, 0, 0, 0.151)
+    background-color: white;
     
 }
 
 form{
     box-shadow: 0 0 20px;
     border-radius: 20px;
-    background-color: white;
     width: 30%;
     padding: 25px 70px;
     margin-top: 30px;
     height: 900px;
+    background-color: white;
 }
 #titulo{
     text-align: center;
@@ -64,8 +64,8 @@ select{
     color: black;
 }
 #btnEnviar:hover{
-    background-color: rgb(154, 240, 154);
-    box-shadow: 0 0 20px rgb(154, 240, 154);
+    background-color: rgb(67, 163, 67);
+    box-shadow: 0 0 20px rgb(67, 163, 67);
     color: white;
 }
 
@@ -89,5 +89,10 @@ p{
 
 #btnContraste{
     margin-right: 360px;
+
+}
+
+#mensaje{
+    width: 100%;
 
 }

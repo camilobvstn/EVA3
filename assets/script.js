@@ -1,13 +1,16 @@
 function cambiarContraste(){
-    let eform=document.getElementById("forms")
-    let fondo=eform.style.backgroundColor
-    let elabel=document.getElementsByClassName("labels")
-    if (fondo=="white")
-        eform.style.backgroundColor="grey"
-
-    else{
-        eform.style.backgroundColor="white"
-        
+    let eBody = document.body;
+    let fondo = eBody.style.backgroundColor;
+    let eform = document.getElementById("forms");
+    let elabels=document.getElementsByClassName("labels");
+    if (fondo== "white"){
+        eform.style.backgroundColor = "white";
+        for (let index = 0; index < elabels.length; index++) {
+            const element = elabels[index];
+            element.style.color = "red";}
+        }
+     else {
+        eform.style.backgroundColor = "grey";
     }
 }
 
@@ -31,7 +34,6 @@ function validarVacio(idCampo){
         elemento.style.borderColor = "red";
         elemento.style.marginBottom="0px"
         elemento.style.boxShadow="0 0 10px red"
-        elemento.style.backgroundColor="rgba(250, 0, 0, 0.051"
         error.style.display = "block";
         error.style.color="red";
     }else{
@@ -61,9 +63,10 @@ function validarLongitud(idCampo){
             elemento.style.borderColor = "green";
         }else{
             
-
+            elemento.style.boxShadow="0 0 10px red"
             elemento.style.borderColor = "red";
             eParrafo.style.display = "block";
+            eParrafo.style.color="red"
        
         }}
     }
