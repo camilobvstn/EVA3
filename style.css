@@ -18,7 +18,7 @@ body{
     padding: 20px;
     background-color: white;
     width: 40%;
-    height: 700px;
+    height: 800px;
     max-height: 1200px;
 }
 
@@ -41,9 +41,24 @@ h1{
 }
 
 .cambiofuente1{
-    color: aqua;
+    font-size: 50px;
+}
+.cambiofuente2{
+    font-size: 25px;
 }
 
 #terminos{
     height: 20px;
+}
+#terminosy{
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#btnEnviar{
+    display: flex;
+    margin: auto;
+    padding: 10px 30px;
+    margin-top: 20px;
 }

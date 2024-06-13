@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <script src="assets/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js"></script>
 </head>
 <body>
-    <form id="form">
+    <form id="form" class="forms">
         <button id="btnContraste" onclick="cambiarContraste()">Contraste</button>
         <button id="btnFuente" onclick="cambiarFuenteTamano()">Fuente</button>
         <h1 id="titulo">REGISTRO</h1>
@@ -21,7 +21,7 @@
         <label class="labels">Email:</label>
         <input type="email" id="email" placeholder="Ingrese un email">
         <p class="noDisplay" id="pemail">Debes ingresar un email valido.</p>
-        <label class="labels">Telefono:</label>
+        <label class="labels">Telefono(Opcional):</label>
         <input type="tel" id="telefono" placeholder="Ingrese su telefono">
         <p class="noDisplay" id="ptelefono">Debes ingresar un numero valido(debe tener 9 digitos.).</p>
         <label class="labels">Direccion:</label>
@@ -30,10 +30,10 @@
         <label class="labels">Nombre de usuario:</label>
         <input type="text" id="usuario" placeholder="Ingresa un nombre de usuario">
         <p class="noDisplay" id="pusuario">Ingresa un nombre de usuario.</p>
-        <label class="labels">Aceptar Terminos y Condiciones.</label>
+        <label class="labels" id="terminosy">Aceptar Terminos y Condiciones.</label>
         <input type="checkbox" id="terminos" required>
         <p class="noDisplay" id="pterminos">Debes aceptar los terminos y condiciones para continuar</p>
-        <button type="button" id="btnEnviar" onclick="validar()">Enviar</button>
+        <button type="button" onclick="validar()" id="btnEnviar">Enviar</button>
     </form>
 </body>
 </html>
