@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="module" src="assets/css/js/script.js"></script>
+    
 </head>
 <body>
     <form id="form" class="forms">
         <button id="btnContraste" onclick="cambiarContraste()">Contraste</button>
         <button id="btnFuente" onclick="cambiarFuenteTamano()">Fuente</button>
         <h1 id="titulo">REGISTRO</h1>
+        <span class="labels">Bienvenido! Este es el formualrio de registro para OpinionesFUT.cl una plataforma donde 
+            puedes dar tu opinion y discutir acerca de partidos que esten sucediendo en tiempo real
+            o que ya hayan terminado.
+        </span>
         <label class="labels">Nombre:</label>
         <input type="text" id="nombre" placeholder="Ingrese su nombre">
         <p class="noDisplay" id="pnombre">Debes ingresar un nombre valido.</p>
@@ -30,24 +34,33 @@
         <label class="labels">Nombre de usuario:</label>
         <input type="text" id="usuario" placeholder="Ingresa un nombre de usuario">
         <p class="noDisplay" id="pusuario">Ingresa un nombre de usuario.</p>
+        <label class="labels">Descripcion(Opcional)</label>
+        <textarea id="descripcion" placeholder="Escribe una descripcion"></textarea>
+        <p class="noDisplay" id="pdescripcion">Ingresa una descripcion valida(min:10 caracteres).</p>
         <label class="labels" id="terminosy">Aceptar Terminos y Condiciones.</label>
         <input type="checkbox" id="terminos" required>
         <p class="noDisplay" id="pterminos">Debes aceptar los terminos y condiciones para continuar</p>
         <button type="button" id="btnEnviar">Enviar</button>
+        <button type="button" id="btnActualizar">Actualizar</button>
+        <script type="module" src="assets/css/js/script.js"></script>
+        
     </form>
-    <div class="basedatos">
+    <div id="basesita">
         <table>
             <thead>
                 <tr>
-                    <h1 class="titulo">Base de datos</h1>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Email</th>
-                    <th>Telefono</th>
-                    <th>Direccion</th>
-                    <th>Nombre de usuario</th>
+                    <h1 id="tituloBase">Base de datos</h1>
+                    <th class="thh">Nombre</th>
+                    <th class="thh">Apellido</th>
+                    <th class="thh">Email</th>
+                    <th class="thh">Telefono</th>
+                    <th class="thh">Direccion</th>
+                    <th class="thh">Nombre de usuario</th>
+                    <th class="thh">Descripcion</th>
                 </tr>
             </thead>
             <tbody id="cuerpoTabla"></tbody>
+        </table>
+    </div>
 </body>
 </html>

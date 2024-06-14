@@ -11,6 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image:url()
 }
 
 #form{
@@ -18,7 +19,6 @@ body{
     padding: 20px;
     background-color: white;
     width: 40%;
-    height: 800px;
 }
 
 input,label{
@@ -60,4 +60,38 @@ h1{
     margin: auto;
     padding: 10px 30px;
     margin-top: 20px;
+}
+
+td{
+    border-bottom: 1px solid black;
+
+}
+th{
+    padding-right: 35px;
+}
+
+#descripcion{
+    display: flex;
+    margin: auto;
+    width: 50%;
+    height: 70px;
+
+
+}
+
+#basesita{
+    font-size: 15px;
+    box-shadow: 0 0 20px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+span{
+    text-align: center;
+    display: flex;
+    width: 90%;
+    margin: auto;
+
 }
